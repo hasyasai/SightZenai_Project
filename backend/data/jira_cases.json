@@ -1,0 +1,142 @@
+[
+  {
+    "issue_id": "JIRA-101",
+    "problem": "CPU spike every morning at 9 AM",
+    "root_cause": "Backup cron + morning login spike",
+    "solution": "Move cron to 3 AM and scale EC2 instance",
+    "category": "Performance"
+  },
+  {
+    "issue_id": "JIRA-102",
+    "problem": "High latency for APAC region",
+    "root_cause": "Overloaded load balancer",
+    "solution": "Added one more ALB and enabled sticky sessions",
+    "category": "Network"
+  },
+  {
+    "issue_id": "JIRA-103",
+    "problem": "Database response time slow",
+    "root_cause": "High read/write IOPS",
+    "solution": "Enabled read replica + increased storage IOPS",
+    "category": "Database"
+  },
+  {
+    "issue_id": "JIRA-104",
+    "problem": "Memory leak in authentication API",
+    "root_cause": "Node.js process not clearing event listeners",
+    "solution": "Fix memory leak and deploy patch",
+    "category": "Application"
+  },
+  {
+    "issue_id": "JIRA-105",
+    "problem": "Service down during afternoon peak",
+    "root_cause": "Auto scaling threshold too high",
+    "solution": "Lower thresholds to scale earlier",
+    "category": "Infrastructure"
+  },
+  {
+    "issue_id": "JIRA-106",
+    "problem": "CloudWatch alert for disk burst balance",
+    "root_cause": "Too many log writes",
+    "solution": "Enable log rotation + increase EBS size",
+    "category": "Storage"
+  },
+  {
+    "issue_id": "JIRA-107",
+    "problem": "Frequent EC2 restarts",
+    "root_cause": "Kernel panic due to outdated AMI",
+    "solution": "Upgrade to latest AMI and patch kernel",
+    "category": "Server"
+  },
+  {
+    "issue_id": "JIRA-108",
+    "problem": "Network packet loss during backups",
+    "root_cause": "Traffic saturation on shared subnet",
+    "solution": "Move backups to isolated subnet",
+    "category": "Network"
+  },
+  {
+    "issue_id": "JIRA-109",
+    "problem": "Authentication failures for EU region",
+    "root_cause": "Clock sync issue (NTP drift)",
+    "solution": "Enable NTP sync on all nodes",
+    "category": "Security"
+  },
+  {
+    "issue_id": "JIRA-110",
+    "problem": "Very high API error rate",
+    "root_cause": "Downstream dependency timeout",
+    "solution": "Add retry logic + increase timeout",
+    "category": "Application"
+  },
+  {
+    "issue_id": "JIRA-111",
+    "problem": "S3 download latency increase",
+    "root_cause": "Large objects causing slow transfer",
+    "solution": "Enable multipart download",
+    "category": "Storage"
+  },
+  {
+    "issue_id": "JIRA-112",
+    "problem": "Health checks failing intermittently",
+    "root_cause": "DNS TTL too high",
+    "solution": "Reduce TTL to 60 sec",
+    "category": "Network"
+  },
+  {
+    "issue_id": "JIRA-113",
+    "problem": "Lambda timeout",
+    "root_cause": "Cold start + heavy computation",
+    "solution": "Enable provisioned concurrency",
+    "category": "Serverless"
+  },
+  {
+    "issue_id": "JIRA-114",
+    "problem": "Frequent 5xx errors",
+    "root_cause": "Database connection pool exhausted",
+    "solution": "Increase DB connections",
+    "category": "Database"
+  },
+  {
+    "issue_id": "JIRA-115",
+    "problem": "SSL certificate expired",
+    "root_cause": "Auto-renew script failed",
+    "solution": "Fix renewal automation",
+    "category": "Security"
+  },
+  {
+    "issue_id": "JIRA-116",
+    "problem": "High RDS CPU usage",
+    "root_cause": "Unoptimized SQL query",
+    "solution": "Add indexing + rewrite query",
+    "category": "Database"
+  },
+  {
+    "issue_id": "JIRA-117",
+    "problem": "Slow CloudWatch log ingestion",
+    "root_cause": "VPC endpoint misconfiguration",
+    "solution": "Enable required ports",
+    "category": "Cloud"
+  },
+  {
+    "issue_id": "JIRA-118",
+    "problem": "ECS service unhealthy",
+    "root_cause": "Wrong health check path",
+    "solution": "Fix path",
+    "category": "Container"
+  },
+  {
+    "issue_id": "JIRA-119",
+    "problem": "Users blocked by WAF",
+    "root_cause": "Aggressive WAF rules",
+    "solution": "Whitelist trusted agents",
+    "category": "Security"
+  },
+  {
+    "issue_id": "JIRA-120",
+    "problem": "CPU throttling",
+    "root_cause": "Burst credits exhausted",
+    "solution": "Switch to M5 instance",
+    "category": "Server"
+  }
+]

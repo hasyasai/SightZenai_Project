@@ -1,0 +1,16 @@
+{
+  "tableau": {
+    "performance_dashboard": "https://public.tableau.com/views/SuperstoreDashboard_54/Dashboard1",
+    "regional_performance": "https://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+    "sales_insights": "https://public.tableau.com/views/WorldIndicators/GDPpercapita"
+  },
+  "powerbi": {
+    "retail_analysis": "https://app.powerbi.com/view?r=eyJrIjoiNDJhM2Y5M2ItZDBmZi00YWI3LTkwYmQtZjhlNzgwNmQ5ZWI1IiwidCI6IjYzNGYyNTg3LTkzZTQtNGZkNC05ZGUwLWQyOTY2OTg1NzlkMiIsImMiOjJ9",
+    "financial_performance": "https://app.powerbi.com/view?r=eyJrIjoiNGQxODA2YzktYWY4Zi00YzY2LWI3ZmUtMzI5NzAzY2E4MDU2IiwidCI6ImU3ZjFhNTZhLWYyZmItNDk3NC1iN2E5LTljMDFlYmVmZDAzMiJ9",
+    "inventory_dashboard": "https://app.powerbi.com/view?r=eyJrIjoiMzAxMjc1NGQtYWQwYi00NTNkLTg2ZDctNmUxZjE2MGFhNjY5IiwidCI6ImVmYTdmYjFmLTZmNmQtNDI0YS04YmM0LTk3ODU5NDA2NzU2YSJ9"
+  },
+  "grafana": {
+    "node_exporter_full": "https://play.grafana.org/d/000000010/node-exporter-full",
+    "kubernetes_resources": "https://play.grafana.org/d/kubernetes/kubernetes-compute-resources-pod"
+  }
+}

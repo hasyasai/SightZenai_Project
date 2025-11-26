@@ -1,0 +1,32 @@
+{
+  "severe_incidents": 4,
+  "high_priority_down": 2,
+  "top_service": "Authentication API",
+  "prediction": "CPU spike expected tomorrow at 9:30 AM",
+  "cpu_trend_24h": [
+    32,
+    45,
+    61,
+    79,
+    88,
+    92,
+    81,
+    70,
+    66,
+    55,
+    40
+  ],
+  "memory_trend_24h": [
+    62,
+    64,
+    68,
+    71,
+    76,
+    82,
+    80,
+    77,
+    70,
+    65,
+    60
+  ]
+}
